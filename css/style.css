@@ -1,0 +1,383 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f6fa;
+  color: #333;
+}
+
+.enter-button, .back-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #1e293b;
+  color: white;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.enter-button:hover, .back-button:hover {
+  background-color: #0f172a;
+}
+
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #f9fafb;
+  text-align: center;
+}
+
+
+/* Navbar layout dasar */
+.navbar {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 16px 32px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Kiri */
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 12px;
+}
+
+.logo-text .title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.logo-text .subtitle {
+  font-size: 12px;
+  color: #666;
+}
+
+/* Tengah: Nav link */
+.navbar-nav {
+  display: flex;
+  gap: 24px;
+}
+
+.navbar-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.navbar-nav a:hover {
+  color: #007bff;
+}
+
+/* Kanan: Tombol */
+.navbar-right {
+  display: flex;
+  gap: 12px;
+}
+
+.btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:first-child {
+  background-color: #b56d00;
+  color: white;
+}
+
+.btn:last-child {
+  background-color: #b56d00;
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+
+.hero {
+  background: linear-gradient(to bottom, #fff, #f5f6fa);
+  padding: 60px 0;
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  gap: 40px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-img img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 20px;
+}
+
+.video-profile {
+  padding: 60px 20px;
+  background-color: #f9fafb;
+}
+
+.video-profile-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+}
+
+.video-profile-video {
+  flex: 1;
+  min-width: 300px;
+}
+
+.video-profile-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.video-subtitle {
+  color: #facc15;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.video-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1e293b;
+  margin-top: 10px;
+}
+
+.video-desc {
+  color: #475569;
+  margin: 20px 0;
+  line-height: 1.6;
+}
+
+.video-button {
+  background-color: #1e293b;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.video-button:hover {
+  background-color: #0f172a;
+}
+
+.vision-mission {
+  padding: 60px 20px;
+  background-color: #f5f6fa;
+;
+}
+
+.vision-mission-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.vision-mission-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.vision-mission-subtitle {
+  color: #ffc107;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.vision-mission-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1e293b;
+  margin-top: 10px;
+}
+
+.vision-mission-paragraph {
+  margin-bottom: 30px;
+  color: #475569;
+}
+
+.vision-mission-list {
+  color: #475569;
+  list-style: none;
+  padding-left: 0;
+}
+
+.vision-mission-list li {
+  margin-bottom: 10px;
+}
+
+.vision-mission-image-wrapper {
+  flex: 1;
+  min-width: 300px;
+  position: relative;
+}
+
+.vision-mission-image {
+  border-radius: 16px;
+  width: 100%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.vision-mission-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background:#f5f6fa;
+  border-radius: 9999px;
+  padding: 16px 24px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.vision-mission-badge .year {
+  color: #ffc107;
+  font-weight: bold;
+  font-size: 24px;
+  margin: 0;
+}
+
+.vision-mission-badge .label {
+  color: #1e293b;
+  font-weight: 600;
+  margin: 0;
+}
+
+.footer {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  margin-top: 50px;
+  font-family: sans-serif;
+  color: #333;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 20px;
+  gap: 40px;
+}
+
+
+.footer-section {
+  flex: 1 1 250px;
+  margin: 10px;
+}
+
+.footer-section h4 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.footer-section ul li i {
+  margin-right: 8px;
+  color: #007BFF;
+}
+
+.footer-section ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  color: #007BFF;
+}
+
+.footer-logo {
+  margin-right: auto;
+  width: 70px;
+  height: 70px;
+  max-width: 90%;
+  border-radius: 100px;
+}
+
+.social-icons a {
+  display: inline-block;
+  background-color: #e08a01;
+  color: #fff;
+  text-align: center;
+  padding: 2px;
+  margin: 5px 3px;
+  border-radius: 50%;
+  font-size: 14px;
+  text-decoration: none;
+  width: 36px;
+  height: 36px;
+  line-height: 37px;
+}
+
+.social-icons a:hover {
+  background-color: #ac0000;
+}
+
+.footer-bottom {
+  font-weight: bold;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  font-size: 13px;
+  padding: 15px 10px;
+  color: #555;
+}
+
+.center {
+  text-align: center;
+}
